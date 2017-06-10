@@ -9,6 +9,11 @@ public class myThread extends Thread {
 
         setName(name);
     }
+    public void voice(){
+        
+        System.out.println("voice");
+        
+    }
     public void run()
     {
         int i=0;
@@ -30,8 +35,10 @@ public class myThread extends Thread {
     public static void main(String[] args) {
         myThread thread1=new myThread("thread1");
         myThread thread2=new myThread("thread2");
+        myThread thread3= new my Thread("thread3");
         thread1.start();
         thread2.start();
+        thread3.start();
 
     }
 
